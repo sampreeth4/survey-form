@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        
+
+        body {
+            background-color: #1F2937;
+
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        .form-control{
+            width: 100%;
+        }
+        #form {
+            background-color: aqua;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+            ;
+        }
+        label{
+            display: block;
+            
+        }
+        
+        .forr{
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        #label-age input{
+            padding-bottom: 50px;
+        }
+        
+        .form-control{
+            text-align: left;
+        }
+        .form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+        .btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+        button{
+            padding: 5px;
+        }
+        #name,#email,#age{
+            padding: 5px;
+        }
+        #gendeer{
+            padding-top: 21px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Survey Form</h1>
+    <form action="" id="form">
+        <div class="form-control">
+            <label for="name" id="label-name" class="forr" style="font-weight: 600;">Name</label>
+            <input type="text" placeholder="Enter your name" id="name" >
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email" class="forr" style="font-weight: 600;">Email</label>
+            <input type="email" id="email" placeholder="Enter your Email">
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age" class="forr" style="font-weight: 600;">Age</label>
+            <input type="text" id="age" placeholder="Enter your age">
+        </div>
+        <div class="form-control" style="display: flex;" id="gendeer">
+            <label for="gender" style="font-weight: 600; padding-right: 10px;" id="gender">Gender</label>
+            <input type="radio" name="option" id="Male" value="Male">
+            <label for="male" id="gender">Male</label>
+
+            <input type="radio" name="option" id="option2" value="Option 2" >
+            <label for="female" id="gender">Female</label>
+
+        </div>
+        <div class="form-control">
+            <label for="recommend" style="font-weight: 600; display: flex;">Would you recommend GeeksforGeeks to a friend?</label>
+            <input type="radio" name="option" id="yes" value="yes" style="display: flex;">
+            <label for="yes" style="display: flex;">Yes</label>
+
+            <input type="radio" name="option" id="option2" value="Option 2">
+            <label for="option2">No</label>
+
+            <input type="radio" name="option" id="option2" value="Option 2">
+            <label for="maybe">Maybe</label>
+
+
+
+        </div>
+        <div class="form-control">
+            <label for="" style="font-weight: 600;">Languages and Frameworks known (Check all that apply)</label>
+            <label for="inp-1">
+                <input type="checkbox">C
+            </label>
+
+            <label for="inp-2">
+                <input type="checkbox">C++
+            </label>
+
+            <label for="inp-3">
+                <input type="checkbox">C#
+            </label>
+            <label for="inp-4">
+                <input type="checkbox">Java
+            </label>
+            <label for="inp-5">
+                <input type="checkbox">JavaScript
+            </label>
+            <label for="inp-6">
+                <input type="checkbox">Python
+            </label>
+            <label for="inp-7">
+                <input type="checkbox">React
+            </label>
+            <label for="inp-8">
+                <input type="checkbox">NodeJS
+            </label>
+            <label for="inp-9">
+                <input type="checkbox">Angular
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="comments" style="font-weight: 600;">Any comments or suggestions</label>
+            <textarea name="comment" id="comment" cols="80" rows="5" placeholder="Comment Here"></textarea>
+        </div>
+        <div class="btn">
+            <button>Submit</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
